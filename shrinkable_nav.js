@@ -1,5 +1,4 @@
 let nav  = document.getElementsByTagName('nav')[0]
-nav.style.transitionDuration = '0.35s';
 
 
 window.addEventListener('scroll', () => {
