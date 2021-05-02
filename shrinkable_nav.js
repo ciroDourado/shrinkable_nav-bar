@@ -12,10 +12,10 @@ window.addEventListener('scroll', () => {
 function shrinkNav() {
     nav.classList.remove('defaultNav')
     nav.classList.add('shrinkedNav')
-} // applyShrinkedAttributes
+} // shrinkNav
 
 
 function expandNav() {
     nav.classList.remove('shrinkedNav')
     nav.classList.add('defaultNav')
-} // applyInitialAttributes
+} // expandNav
