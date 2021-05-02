@@ -1,30 +1,22 @@
-let nav  = document.getElementById('shrinkable_nav')
+let nav  = document.getElementsByTagName('nav')[0]
 nav.style.transitionDuration = '0.35s';
 
 
 window.addEventListener('scroll', () => {
     window.scrollTop == 0 || window.pageYOffset == 0?
-        applyInitialAttributes():
-        applyShrinkedAttributes();
+        expandNav():
+        shrinkNav();
 }, false)
 
 
-function extractValueFrom(string) {
-    return string.match(/(\d+)/);
-} // extractValueFrom
 
-
-let initialHeight  = nav.offsetHeight
-let shrinkedHeight = initialHeight*(3/4)
-
-
-function applyShrinkedAttributes() {
-    nav.style.height = shrinkedHeight + 'px'
-    nav.style.fontSize = '15px'
+function shrinkNav() {
+    nav.classList.remove('defaultNav')
+    nav.classList.add('shrinkedNav')
 } // applyShrinkedAttributes
 
 
-function applyInitialAttributes() {
-    nav.style.height = initialHeight  + 'px'
-    nav.style.fontSize = '16px'
+function expandNav() {
+    nav.classList.remove('shrinkedNav')
+    nav.classList.add('defaultNav')
 } // applyInitialAttributes
