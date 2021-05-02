@@ -1,0 +1,30 @@
+body {
+    height: 1500px;
+    background-color: #D8D8D8;
+
+    margin:  0px;
+    padding: 0px;
+    overflow-y: auto;
+}
+
+nav {
+    height: 56px;
+    background-color: #C8C8C8;
+
+    position: fixed;
+    width: 100%;
+}
+
+.centered {
+    display       : flex;
+    flex-direction: row;
+
+    align-items    : center;
+    justify-content: center;
+}
+
+.serigraphed {
+    color: #282828;
+    font-family: Roboto;
+    /* font-size  : 18px; */
+}
