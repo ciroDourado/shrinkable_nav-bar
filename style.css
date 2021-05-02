@@ -8,11 +8,20 @@ body {
 }
 
 nav {
-    height: 56px;
     background-color: #C8C8C8;
 
     position: fixed;
     width: 100%;
+}
+
+.defaultNav {
+    height   : 56px;
+    font-size: 16px;
+}
+
+.shrinkedNav {
+    height   : 42px;
+    font-size: 15px;
 }
 
 .centered {
@@ -26,5 +35,4 @@ nav {
 .serigraphed {
     color: #282828;
     font-family: Roboto;
-    /* font-size  : 18px; */
 }
